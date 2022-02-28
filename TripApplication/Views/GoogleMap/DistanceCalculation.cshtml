@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Goolge Map With Distance Calculation";
+}
+
+<title>@ViewBag.Title</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" >
+<link rel="stylesheet" href="/css/GoogleMap/GoogleMap.css" type="text/css" >
+
+<div class="row">
+    <div class="col-md-12">
+        <input type="text" id="txtSource" placeholder="Enter Source...." />
+
+        <input type="text" id="txtDestination" placeholder="Enter Destination...." />
+        <br />
+        <input type="button" value="Show" onclick="GetRoute()" class="button button4" />
+        <hr />
+        <div id="dvDistance" style="font-size:x-large; font-family: Arial Black; background-color: Yellow; color: Blue; text-align: center">
+        </div>
+        <div id="dvMap">
+        </div>
+        <div id="dvPanel">
+        </div>
+        <hr />
+
+    </div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkVZYQFe4YYva_g5ulymGDt9EBoVjjZJ8&libraries=places"></script>
+<script src="/js/GoogleMap/DistanceCalculation.js"></script>  
